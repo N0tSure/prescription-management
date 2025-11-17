@@ -2,6 +2,8 @@
 
 The Prescription Management (PM) allows consumers to create, read, search and update prescriptions.
 
+This project uses [Semantic Versioning](https://semver.org).
+
 ## Configuration
 
 Below properties using to configuring application, they provided in form of application property and OS environment variable.
