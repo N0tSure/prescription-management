@@ -91,6 +91,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+          <image>
+            <env>
+              <BP_HEALTH_CHECKER_ENABLED>true</BP_HEALTH_CHECKER_ENABLED>
+            </env>
+            <buildpacks>
+              <buildpack>urn:cnb:builder:paketo-buildpacks/java</buildpack>
+              <buildpack>docker.io/paketobuildpacks/health-checker</buildpack>
+            </buildpacks>
+            <createdDate>2025-11-17T02:33:00+01:00</createdDate>
+          </image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
